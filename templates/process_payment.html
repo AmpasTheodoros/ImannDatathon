@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process Payment</title>
+</head>
+<body>
+    <h1>Process Payment</h1>
+    <form action="/process_payment" method="post">
+        <label for="order_id">Order ID:</label>
+        <input type="text" id="order_id" name="order_id" required><br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required><br>
+        <label for="payment_method">Payment Method:</label>
+        <input type="text" id="payment_method" name="payment_method" required><br>
+        <input type="submit" value="Process Payment">
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

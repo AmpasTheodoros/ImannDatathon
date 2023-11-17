@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+</head>
+<body>
+    <h1>Product Entry</h1>
+    <form action="/add_product" method="post">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="details">Details:</label>
+        <input type="text" id="details" name="details" required><br>
+        <label for="manufacturer_id">Manufacturer ID:</label>
+        <input type="text" id="manufacturer_id" name="manufacturer_id" required><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required><br>
+        <input type="submit" value="Add Product">
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

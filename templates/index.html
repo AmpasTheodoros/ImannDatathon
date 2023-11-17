@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockchain PoS System</title>
+</head>
+<body>
+    <h1>Welcome to the Blockchain PoS System</h1>
+    <ul>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/update_inventory">Update Inventory</a></li>
+        <li><a href="/add_product">Add Product</a></li>
+        <li><a href="/register_manufacturer">Register Manufacturer</a></li>
+        <li><a href="/register_customer">Register Customer</a></li>
+        <li><a href="/add_order_detail">Add Order Detail</a></li>
+        <li><a href="/place_order">Place Order</a></li>
+        <li><a href="/process_payment">Process Payment</a></li>
+    </ul>
+    {% if session.username %}
+        <p>Logged in as {{ session.username }}</p>
+        <a href="/logout">Logout</a>
+    {% endif %}
+</body>
+</html>
